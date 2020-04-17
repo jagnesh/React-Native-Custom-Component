@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import { View, Text, Button, StyleSheet } from 'react-native'
+import { View, Text, Button, StyleSheet,ScrollView } from 'react-native'
 import CustomButton from '../ui/CustomButton'
 import GetName from '../ui/GetName'
 import { CustomInput } from '../ui/CustomInput'
+
 
 export default class HomeScreen extends Component {
 
@@ -20,14 +21,17 @@ export default class HomeScreen extends Component {
     }
     render() {
         return (
-            <View>
+            <ScrollView>
                 <Text style={style.heading}>TASK 1</Text>
                 <CustomButton title="Move To"
                     navigator={this.props.navigation}
                     navigate="DetailScreen"
                 />
                 <Text style={style.heading}>TASK 2</Text>
-                <GetName name="Appsimity" />
+                <GetName name="Name Appsimity" />
+                <GetName name="Name Appsimity1" />
+                <GetName name="Name Appsimity2" />
+                <GetName name="Name Appsimity3" />
                 <Text style={style.heading}>TASK 3</Text>
                 <View>
                     <CustomInput
@@ -47,7 +51,8 @@ export default class HomeScreen extends Component {
 
                 </View>
                 <Button title="Check State" onPress={() => alert(this.showState())} />
-            </View>
+  
+            </ScrollView>
         )
     }
 }
