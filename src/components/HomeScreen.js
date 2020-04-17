@@ -21,7 +21,7 @@ export default class HomeScreen extends Component {
     }
     render() {
         return (
-            <ScrollView>
+            <ScrollView style={style.container}>
                 <Text style={style.heading}>TASK 1</Text>
                 <CustomButton title="Move To"
                     navigator={this.props.navigation}
@@ -62,5 +62,9 @@ const style = StyleSheet.create({
         fontSize: 18,
         fontWeight: 'bold',
         margin: 10
+    },
+    container:{
+        flex:1,
+        backgroundColor:"#FFFFFF"
     }
 })

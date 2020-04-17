@@ -3,7 +3,7 @@ import { TextInput, View, Text } from 'react-native';
 
 
 
-DEAFULT_COLOR = "#d6ecf8"
+DEAFULT_COLOR = "#5b5b5b"
 FOCUS_COLOR = "#20649b"
 BLACK_COLOR = "#000000"
 class CustomInput extends Component {
